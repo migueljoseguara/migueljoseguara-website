@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Future Website</title>
+    <title>Miguel's Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,21 +11,44 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f4f4f9;
+            margin: 0;
+
+            /* --- DARK OVERLAY + BACKGROUND IMAGE --- */
+            /* The linear-gradient acts as a dark 50% opacity tint layered over the image */
+            background-image: 
+                linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('https://memorialdademocracia.com.br/publico/image/15900'); 
+            
+            background-repeat: no-repeat; 
+            background-position: center; 
+            background-size: cover; 
+            
+            /* Fallback dark gray color in case the image doesn't load */
+            background-color: #333333; 
         }
         .container {
-            text-align: center;
-            padding: 20px;
-            background: white;
+            width: 350px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #ffe400;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: 12px solid #000000;
+            box-sizing: border-box;
+            
+            /* Added a subtle shadow to make the yellow box "pop" off the darkened background */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
+        }
+        h1 {
+            margin: 0;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Under Construction 🚀</h1>
-        <p>This is a placeholder for my future GitHub-hosted website.</p>
+        <h1>UNDER CONSTRUCTION</h1>
     </div>
 </body>
 </html>
